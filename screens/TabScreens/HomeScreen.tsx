@@ -35,7 +35,7 @@ class HomeScreen extends React.Component {
                         <Image source={require('../../assets/images/share.jpg')} style={{width:25,height:25, margin:10, bottom:5}} />
                     </View>
                 </View>
-                {(this.props.post.feed) ?
+                {(this.props.post.feed?.length>0) ?
                 <FlatList
                 
                 data={this.props.post.feed}
